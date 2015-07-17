@@ -26,7 +26,6 @@ Currently there is only a manual install:
 # Unzip it into the folder @/usr/share/lightdm-webkit/themes/@
 # Rename the unzipped folder to @material-lightdm@ (so that the complete path becomes @/usr/share/lightdm-webkit/themes/material-lightdm@)
 # Edit the resource @/etc/lightdm/lightdm-webkit2-greeter.conf@ and set @webkit-theme@ property to @material-lightdm@ :
-
 bc. 
 theme-name=Adwaita
 #webkit-theme=default
