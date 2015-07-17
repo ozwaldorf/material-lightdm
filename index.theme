@@ -1,0 +1,6 @@
+[theme]
+name=material-lightdm
+description=A Material Design Theme For LightDM WebKit Greeter
+engine=lightdm-webkit-greeter
+url=index.html
+session=gnome
