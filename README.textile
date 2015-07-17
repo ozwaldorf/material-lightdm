@@ -1,42 +1,47 @@
-h1. material-lightdm
+material-lightdm
+================
 
-
-h2. Overview
+Overview
+--------
 
 Material Design LightDM WebKit Theme
 
-h2. Prerequisites
+Prerequisites
+-------------
 
-* lightdm
-* lightdm-webkit2-greeter
-* antergos-wallpapers (used for the background switcher)
+-   lightdm
+-   lightdm-webkit2-greeter
+-   antergos-wallpapers (used for the background switcher)
 
-Enable @ligthdm-webkit2-greeter@ by editing @/etc/lightdm/lightdm.conf@ and setting @greeter-session@ property to @lightdm-webkit2-greeter@ :
+Enable `ligthdm-webkit2-greeter` by editing `/etc/lightdm/lightdm.conf` and setting `greeter-session` property to `lightdm-webkit2-greeter` :
 
-bc. 
-[SeatDefaults]
-#greeter-session=lightdm-gtk-greeter
+\[SeatDefaults\]
+\#greeter-session=lightdm-gtk-greeter
 greeter-session=lightdm-webkit2-greeter
-user-session=your-session (gnome,cinnamon,xfce...)
+user-session=your-session (gnome,cinnamon,xfce…)
 
-h2. Installation
+Installation
+------------
 
 Currently there is only a manual install:
 
-# Download "Material LightDM"
-# Unzip it into the folder @/usr/share/lightdm-webkit/themes/@
-# Rename the unzipped folder to @material-lightdm@ (so that the complete path becomes @/usr/share/lightdm-webkit/themes/material-lightdm@)
-# Edit the resource @/etc/lightdm/lightdm-webkit2-greeter.conf@ and set @webkit-theme@ property to @material-lightdm@ :
+1.  Download “Material LightDM”
+2.  Unzip it into the folder `/usr/share/lightdm-webkit/themes/`
+3.  Rename the unzipped folder to `material-lightdm` (so that the complete path becomes `/usr/share/lightdm-webkit/themes/material-lightdm`)
+4.  Edit the resource `/etc/lightdm/lightdm-webkit2-greeter.conf` and set `webkit-theme` property to `material-lightdm` :
 
-bc. 
+<!-- -->
+
 theme-name=Adwaita
-#webkit-theme=default
+\#webkit-theme=default
 webkit-theme=material-lightdm
 
-h1. Uninstallation
+Uninstallation
+==============
 
-To uninstall, simply restore the @greeter-session@ property of the @/etc/lightdm/lightdm.conf@ file and restart your computer (or at least lightdm).
+To uninstall, simply restore the `greeter-session` property of the `/etc/lightdm/lightdm.conf` file and restart your computer (or at least lightdm).
 
 You may also want to :
-# Remove the folder @material-lightdm@ created in @/usr/share/lightdm-webkit/themes/@
-# Restore the @webkit-theme@ property of the @/etc/lightdm/lightdm-webkit-greeter.conf@ file
+
+1.  Remove the folder `material-lightdm` created in `/usr/share/lightdm-webkit/themes/`
+2.  Restore the `webkit-theme` property of the `/etc/lightdm/lightdm-webkit-greeter.conf` file
