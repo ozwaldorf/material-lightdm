@@ -56,6 +56,14 @@ font-weight: 10;
     overflow: auto;
     /* outline: 1px solid red; */
 }
+
+.dropdown-content {
+    z-index: 2;
+}
+
+.card .card-reveal {
+    height: 130%;
+}
 </style>
     </head>
 
@@ -86,6 +94,11 @@ font-weight: 10;
 <div class="input-field col s12 m9">
           <input id="pass" placeholder="Password" type="password" tabindex="2"/>
           <label for="password">Password</label>
+</div>
+<div class="input-field col s12">
+    <select id="session" tabindex="1">
+    </select>
+    <label>Session</label>
 </div>
 <div class="input-field col s12 m3">
                  <button type="submit" tabindex="3" class="btn waves-effect waves-light">Log In <i class="mdi mdi-send"></i>
