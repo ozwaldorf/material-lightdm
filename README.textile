@@ -40,3 +40,7 @@ To uninstall, simply restore the @greeter-session@ property of the @/etc/lightdm
 You may also want to :
 # Remove the folder @material-lightdm@ created in @/usr/share/lightdm-webkit/themes/@
 # Restore the @webkit-theme@ property of the @/etc/lightdm/lightdm-webkit-greeter.conf@ file
+
+h1. Other Greeter Themes
+
+https://github.com/budgie-remix/budgie-artwork
