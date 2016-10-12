@@ -18,7 +18,6 @@
 
         .card {
             background: #F5F5F5;
-            display: none;
         }
 
         .element {
@@ -117,9 +116,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="indeterminate"></div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -158,10 +154,6 @@
             $(document).ready(function() {
                 $('select').material_select();
                 $('.modal-trigger').leanModal();
-                setTimeout(function() {
-                    $('.card').fadeIn();
-                }, 2000);
-                $('.progress').fadeOut(2000);
             });
 
             Math.Vector = function(x, y) {
